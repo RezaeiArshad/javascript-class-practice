@@ -26,19 +26,22 @@ h1 {
     row-gap: 20px;
 }
 
-#book {
+.book {
     background-color: white;
     width: 250px;
     height: 200px;
     box-shadow: 0 0 0px 1px;
     border-radius: 30px;
+    text-align: center;
 }
 
-#book p {
-    margin-top: 25px
+.book p {
+    margin-top: 25px;
+    height: 20px;
+    width: 240px;
 }
 
-#book button{
+.book button{
     margin-top: 20px;
     background-color: limegreen;
     border: none;
@@ -48,17 +51,76 @@ h1 {
     transition: all 0.2s ease;
 }
 
-#book button:hover {
+.book button:hover {
     transform: scale(1.1);
     color: white;
     cursor: pointer;
 }
 
 #cart {
+    display: none;
     position: absolute;
     right: 40px;
     top: 100px;
     background-color: beige;
     width: 300px;
-    height: 500px
+    height: 500px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+#selected-books {
+    background-color: rgb(166, 166, 166);
+    height: 380px;
+    overflow: auto;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#selected-book {
+    margin-bottom: 20px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0 0 0px 2px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#cart button {
+    width: 80px;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 0 10px 2px red;
+    background-color: red;
+    transition: all 0.2s ease;
+}
+
+#cart button:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+#cart h6 {
+    position: absolute;
+    transform: scale(0.7);
+}
+
+#show-cart {
+    position: absolute;
+    right: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px 2px yellow;
+    background-color: yellow;
+    transition: all 0.2s ease;
+}
+
+#show-cart:hover {
+    transform: scale(1.1);
 }
